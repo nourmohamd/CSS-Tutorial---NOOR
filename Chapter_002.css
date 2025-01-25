@@ -1,0 +1,118 @@
+/* Start Colors */
+
+/* 1 - keyword red green ...*/
+div {
+    background-color: red;
+}
+/* 2 - Hexa dicemal #@@@@@@ */
+div {
+    background-color: #ff0000;
+}
+div {
+    background-color: #00ff00;
+}
+div {
+    background-color: #0000ff;
+}
+div {
+    background-color: #000000;
+}
+div {
+    background-color: #ffffff;
+}
+/* 3 - rgb(255, 255, 255) ==> red, green, blue */
+div {
+    background-color: rgb(255,0,0);
+}
+div {
+    background-color: rgb(0,255,0);
+}
+div {
+    background-color: rgb(0,0,255);
+}
+div {
+    background-color: rgb(255,255,255);
+}
+div {
+    background-color: rgb(0,0,0);
+}
+/* 4 - rgba(red,green,blue,alpha) ==> alpha=0.0 - 1.0 */
+div {
+    background-color: rgba(255,0,0,.5);
+}
+/* 5 - Hexa with alpha #@@@@@@AA */
+div {
+    background-color: #ff000077;
+}
+/* 6 - hsl(hue, saturation, lighness) */
+/* red = 360, blue = 240, green = 120 */
+div {
+    background-color: hsl(360, 100%, 50%);
+}
+/* 7 - hsla(hue, saturation, lighness, alpha) */
+div {
+    background-color: hsla(360, 100%, 50%, .5);
+}
+/* End Colors */
+
+/* Start Background */
+div {
+    background-color: red;
+    background-image: url("../img/W.jpg");
+    background-size: cover; /* cover, contain, auto, Xpx Ypx, XYpx */
+    background-repeat: no-repeat; /* no-repeat | repeat(default) | repeat-x | repeat-y */
+    background-attachment: fixed; /* scroll | fixed | local */
+    background-position: left center; /* First Value is One Of (left, center, right) And Second Value is One Of (top, center, bottom) */
+    background-position-x: left;
+    background-position-y: bottom;
+    background-blend-mode: difference;
+    background: url("img.jpg"), color;
+    background: color url("img.jpg");
+    /* 
+    Concat background-color and background-image
+    background: url1, url2, ... color
+    */
+  }
+/* End Background */
+
+/* Start Display */
+div {
+    display: block; /* Support padding and margin from all directions */
+    display: inline; /* Support padding and margin from right and left*/
+    display: inline-block; /* Support padding and margin from all directions */
+}
+/* End Display */
+
+/* Start !Important */
+div {
+    color: white !important
+}
+/* End Important */
+
+/* Start Global Rules */
+p {
+    /* Inheritance */
+    color: inherit;
+  }
+  
+  p {
+    /* Default */
+    color: initial;
+  }
+  
+  p {
+    /* if (inherit) inherit else if (not inherit) initial */
+    color: unset;
+  }
+  
+  p {
+    /* return settings user-agent */
+    color: revert;
+  }
+
+  p {
+    /* all */
+    color: all;
+  }
+  
+/* End Global Rules */
