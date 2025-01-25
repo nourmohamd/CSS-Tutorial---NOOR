@@ -1,0 +1,139 @@
+/* CSS < Cascading Style Sheets > */
+
+/* Chapter 1 */
+
+/* Three Ways To Write CSS Rules */
+
+/* 
+1 - Internal
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                Here Put Rules
+            </style>
+        </head>
+        <body>
+        </body>
+    </html>
+    
+2 - Inline Best
+    <!DOCTYPE html>
+    <html>
+        <head>
+        </head>
+        <body>
+            <el style="Here Put Rules"></el>
+        </body>
+    </html>
+
+3 - External
+    //index.html
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+        </body>
+    </html>
+    //style.css (The Orginal Name)
+    Here Put Rules
+*/  
+
+/* Syntax of CSS's Rules */
+
+/* 
+    Selector {
+        Property: Value;
+    }
+
+    or
+
+    <el style="property: value;" ></el>
+*/
+
+/* All Selectors */
+* {}
+
+p {}
+
+div p {}
+
+.class_name {}
+
+#id_name {}
+
+.a .b {}
+
+.a.b {}
+
+.class div {}
+
+.n1, .n2 {}
+
+p.a {}
+
+p#a {}
+
+.parent > .child {}
+
+div + p {}
+
+div ~ p {}
+
+[attr] {}
+
+div[attr] {}
+
+[attr="value"] {}
+
+div[attr="value"] {}
+
+div[attr~="value"] {}
+
+div[attr|="value"] {}
+
+div[attr$="value"] {}
+
+div[attr*="value"] {}
+
+div[attr^="value"] {}
+
+p:first-child {}
+
+p:last-child {}
+
+p:first-of-type {}
+
+p:last-of-type {}
+
+p:only-child {}
+
+p:only-of-type {}
+
+p:not(:first-child) {}
+
+p:not(.nour) {}
+
+p:nth-child(number) {}
+
+p:nth-child(even) {}
+
+p:nth-child(odd) {}
+
+p:nth-last-child(number) {}
+
+p:nth-of-type(number) {}
+
+p:nth-last-of-type(number) {}
+
+:nth-child(2 of .box) {}
+
+/* Comments */
+
+/* single line */
+
+/* 
+    multiple lines
+*/
