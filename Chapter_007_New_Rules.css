@@ -1,0 +1,187 @@
+/* New CSS Attributes */
+
+/* Nesting */
+.parent {
+    p {
+      background-color: blue;
+    }
+  
+    a {
+      i {
+        color: red;
+      }
+    }
+    &:hover {
+      color: black;
+    }
+  }
+  
+  /* Border-block */
+  p {
+    border-block: 5px solid red;
+    /* يحافظ على موقعه حتى لو تم فتل العنصر سيفتل مع العنصر */
+    writing-mode: vertical-lr;
+  }
+  
+  /* Psuedo Class Where */
+  .parent :where(p, h2, q, blockquote) {
+    color: red;
+  }
+  
+  .parent :where(p, h2, q, blockquote) :where(span, input) {
+    color: red;
+  }
+  
+  /* Blanced-Text */
+  p {
+    /* التوازن بين عدد الأحرف في كل سطر مع بقية الأسطر */
+    text-wrap: balance;
+    /* إلتفاف النص */
+    text-wrap: wrap;
+    /* عدم إلتفاف النص */
+    text-wrap: nowrap;
+    /* الحالة الأفتراضية */
+    text-wrap: normal;
+  }
+  
+  /* Psuedo Class has */
+  /* يعمل كمبدأ الشرط إذا تحقق يطبق الكود على العنصر الذي استدعا ال 
+    has */
+  .parent:has(a, span) {
+  }
+  
+  .parent:has(a):has(span) {
+  }
+  
+  .parent:has(+ form) {
+  }
+  
+  /* Nth Of Child */
+  .parent :nth-child(1 of p) {
+    color: red;
+  }
+  
+  /* Is */
+  
+  :is(div, p, h2) a {
+    color: red;
+  }
+  
+  :is(div, p, h2) :is(a, span) {
+    color: red;
+  }
+  
+  /* Decorating Text ==> Use For Any Element */
+  
+  a {
+    text-decoration: none;
+  
+    text-decoration-line: overline;
+    text-decoration-line: line-through;
+    text-decoration-line: underline;
+  
+    text-decoration-style: wavy;
+  
+    text-decoration-color: red;
+  }
+  
+  /* Current Color Keyword */
+  .parent {
+    color: red;
+    border: 1px solid currentColor;
+  }
+  
+  .parent .child {
+    color: currentColor;
+    border: inherit;
+    border: 2px dotted currentColor;
+  }
+  
+  /* Empty Psuedo Class */
+  
+  p:empty {
+  }
+  
+  :empty {
+  }
+  
+  /* User Select All Text */
+  
+  p {
+    user-select: none;
+    user-select: all;
+  }
+  
+  /* Outline-Offset */
+  
+  p {
+    border: 2px solid red;
+    outline: 2px solid blue;
+    outline-offset: 2px;
+  }
+  
+  /* Scroll Padding & Margin */
+  html {
+    scroll-behavior: smooth;
+    scroll-margin-top: 1px;
+    scroll-margin-left: 1px;
+    scroll-margin-bottom: 1px;
+    scroll-margin-right: 1px;
+    scroll-margin-inline: 1px;
+    scroll-margin-inline-start: 1px;
+    scroll-margin-inline-end: 1px;
+    scroll-margin-block: 1px;
+    scroll-margin-block-start: 1px;
+    scroll-margin-block-end: 1px;
+  
+    scroll-padding-top: 1px;
+    scroll-padding-left: 1px;
+    scroll-padding-bottom: 1px;
+    scroll-padding-right: 1px;
+    scroll-padding-inline: 1px;
+    scroll-padding-inline-start: 1px;
+    scroll-padding-inline-end: 1px;
+    scroll-padding-block: 1px;
+    scroll-padding-block-start: 1px;
+    scroll-padding-block-end: 1px;
+  }
+  
+  /* Marker Psuedo Element */
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* 1 */
+  ul li::before {
+    content: "\2022";
+    color: green;
+    display: inline-flex;
+    margin-right: 10px;
+  }
+  
+  /* 2 */
+  
+  ul li::before {
+    content: "";
+    margin-right: 10px;
+    background-color: yellow;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-flex;
+  }
+  
+  /* 3 */
+  
+  ul li::marker {
+    color: red;
+  }
+  
+  /* 4 */
+  
+  ul li::marker {
+    content: "@";
+    color: red;
+  }
+  
