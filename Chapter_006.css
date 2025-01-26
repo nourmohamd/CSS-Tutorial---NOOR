@@ -1,0 +1,96 @@
+/* Start Animation */
+@keyframes anim2 {
+    from {
+      color: red;
+    }
+  
+    to {
+      color: black;
+    }
+  }
+  
+  @keyframes anim2 {
+    10% {
+      color: blue;
+    }
+  
+    20% {
+      color: green;
+    }
+  
+    60% {
+      color: rgb(105, 102, 95);
+    }
+  
+    100% {
+      color: white;
+    }
+  }
+  
+  /* خواص الأنيميشن */
+  /* 
+  animation-name: name;
+  animation-duration : 1s | 1000ms;
+  animation-delay: 1s | 1000ms;
+  animation-timing-function: ease|ease-in|ease-out|ease-in-out|linear;
+  animation-iteration-count: infinite | number;
+  animation-direction: alternate| normal(default) | reverse | alternate-reverse;
+  animation-fill-mode: none(default) | forward | backward | both;
+  animation-play-state: running | paused;
+  animation: name duration delay timing-function iteration-count direction fill-mode play-state
+  */
+/* End Animation */
+
+/* Start Scrolling */
+::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track-piece {
+}
+
+::-webkit-scrollbar-corner {
+}
+
+::-webkit-scrollbar-button {
+}
+
+::-webkit-resizer {
+}
+/* End Scrolling */
+
+/* Start Appearance */
+input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+/* End Appearance */
+
+/* Start mix-blend-mode */
+p {
+    mix-blend-mode: difference;
+}
+/* End mix-blend-mode */
+
+/* جعل الصورة كلون للنص */
+
+p {
+    color: transparent;
+    background-image: url("../img/W.jpg");
+    -webkit-background-clip: text;
+}
+
+/* إضافة بوردر للنص */
+p {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-width: thick;
+    -webkit-text-stroke-width: medium;
+    -webkit-text-stroke-color: red;
+    -webkit-text-stroke: 2px red;
+}
