@@ -1,0 +1,124 @@
+/* Start Transform */
+.element {
+    /*2D*/ 
+
+    /*scaleشدالعنصر*/
+    /*if the value was negative ==> reverse Element X|Y*/  
+    /*Default1*/
+    transform: scaleX(1);
+    /*Default1*/
+    transform: scaleY(1);
+    transform: scale(1);
+    transform: scale(1, 1);
+    /*DefaultX==>1,Y==>1|X,Y1*/
+    transform: scaleX(2);
+
+    /*Rotate*/
+    /*360deg|6.28rad|400grad|1turn*/
+    transform: rotateX(20deg);
+    transform: rotateX(-20deg);
+    transform: rotateY(20deg);
+    transform: rotateY(-20deg);
+    /*Shorthand For Scale and rotate*/
+    transform: scale(1, 1) rotate(20deg);
+
+    /*Translate For Move Element To Any Place*/
+    transform: translateX(10px);
+    transform: translateX(-10px);
+    transform: translateY(10px);
+    transform: translateY(-10px);
+    transform: translate(10px);
+    transform: translate(10px, 10px);
+
+    /*Skew*/
+    transform: skewX(20deg);
+    transform: skewY(20deg);
+    transform: skew(20deg);
+    transform: skew(20deg, 40deg);
+    /*if There is One Value ==>X,Y=0*/ 
+    /*if There Are tow Values ==>X,Y*/ 
+
+    /* Matrix(scaleX,skewY,skewX,scaleY,translateX,translateY) */
+    transform: matrix(1, 10deg, 20deg, 1, 10px, -10px);
+
+    /*origin*/ 
+
+    /*For 2D*/
+    transform-origin: 50% 50%;
+    transform-origin: center center;
+    /* First Value For X ===> px,em,rem,vh,vw,%,left,center,right */ 
+    /* Second Value For Y ===> px,em,rem,vh,vw,%,top,center,bottom */
+    transform-origin: left top;
+    transform-origin: left center;
+    transform-origin: left bottom;
+    transform-origin: center top;
+    transform-origin: center center;
+    transform-origin: center bottom;
+    transform-origin: right top;
+    transform-origin: right center;
+    transform-origin: right bottom;
+
+    /*3D*/ 
+    
+    /*Rotate*/
+    transform: rotateX(20deg);
+    transform: rotateY(20deg);
+    transform: rotateZ(20deg);
+    transform: rotate3d(1, 1, 1, 20deg);
+    /*X,Y,Z,زاوية*/
+    
+    /*Translate*/
+    transform: translateX(10px);
+    transform: translateY(10px);
+    transform: translateZ(10px);
+    transform: translate3d(10px, 10px, 10px);
+    /*X,Y,Z*/ 
+
+    /* But When you use translateZ you shoud put Attribute Called it prespective For Parent Element */
+    perspective: 300px;
+
+    /* prespective-origin like transform-origin */
+    perspective-origin: left bottom;
+
+    /*backface-visibility When we rotate The element we put This CSS attribute for hidden or visible Back ELement*/
+    backface-visibility: hidden;
+    backface-visibility: visible;
+
+    /*ForExample:   
+    HTML     
+    <div class="parent">      
+    <div class="front face"></div>      
+    <div class="back face"></div>    
+    </div>  
+    CSS    
+    .parent {
+        prespective: 300px;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d; This Attribute Use When 3D Default Value is (flat)
+        transition: 1s;
+    }
+    .parent:hover {
+    transform: rotateY(-180deg);
+    }
+    .parent .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backface-visibility: hidden;
+    }
+    .front {
+    background-color: red;
+    }
+    .back {
+    background-color: orange;
+    transform: rotateY(180deg);
+    }
+*/
+}
+/* End Transform */
