@@ -1,0 +1,400 @@
+/* CSS Rules ===> px, %, em, rem, vh, vw */
+/* Start CSS Size */
+div {
+
+    /* width */
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+
+    /* height */
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+div {
+
+    /* Padding */
+    padding: 10px 10px 10px 10px; /* top right bottom left */
+    padding: 10px 10px 10px;
+    padding: 10px 10px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-inline: 10px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    padding-block: 10px;
+    padding-block-start: 10px;
+    padding-block-end: 10px;
+
+    /* Margin */
+    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px;
+    margin: 10px 10px;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-inline: 10px;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    margin-block: 10px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+
+    /* Border */
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+    border-top: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-inline: 1px solid red;
+    border-inline-start: 1px solid red;
+    border-inline-end: 1px solid red;
+    border-block: 1px solid red;
+    border-block-start: 1px solid red;
+    border-block-end: 1px solid red;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: red;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: red;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: red;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: red;
+
+    /* CSS Outline */
+    outline-width: 10px;
+    outline-style: solid;
+    outline-color: red;
+    outline: 10px solid red;
+    outline-offset: 10px;
+
+    /* Border-Radius */
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* Box-Shadow: h-shadow v-shadow blur spread color Type Direction(inset | null) */
+}
+ /* End CSS Size */
+
+/* Start Fonts */
+div {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-variant: small-caps;
+    font: italic bold 20px "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif small-caps;
+}
+/* End Fonts */
+
+/* Start Text Ryles */
+div {
+
+    /* text-align: center | left | start | end | right | justify; */
+    text-align: center;
+
+    /* text-shadow: h-shadow v-shadow blur color */
+    text-shadow: 0px 0px 10px red;
+
+    /* direction: ltr | rtl */
+    direction: rtl;
+
+    /* text-transform: capitalize | uppercase | lowercase */
+    text-transform: capitalize;
+
+    /* letter-spacing */
+    letter-spacing: 10px;
+
+    /* text-indent */
+    text-indent: 10px;
+
+    /* line-height: 1.0 | 1px | 100% */
+    line-height: 1.6;
+
+    /* word-spacing */
+    word-spacing: 10px;
+
+    /* white-space */
+    white-space: nowrap;
+    white-space: normal;
+    white-space: pre;
+
+    /* word-break */
+    word-break: normal;
+    word-break: break-all;
+    word-break: break-word;
+
+    /* text-overflow */
+    text-overflow: clip; /* default value */
+    text-overflow: ellipsis;
+    text-overflow: hidden;
+
+    /* inherit */
+    color: inherit;
+
+    /* text-decoration */
+    text-decoration: none;
+    text-decoration-line: overline; /* overline underline line-through */
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 10px;
+
+    /* Vertical-align */
+    vertical-align: top;
+    vertical-align: middle;
+    vertical-align: bottom;
+
+    /* Show ... in end text */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* End Text Rules */
+
+/* Start Float && Clear */
+div {
+    /* Float: left | right , Clear: left | right | both */
+    float: left;
+    clear: both;
+}
+/* End Float && Clear */
+
+/* Start Hidden Elements */
+
+div {
+
+     /* CSS Hidden */
+    display: none;
+    visibility: hidden;
+
+    /* Show Element */
+    display: block;
+    visibility: visible;
+}
+
+/* End Hidden Elements */
+
+/* Calculation: calc((100% - 20px) / 5) */
+
+/* Start Pseudo Classes */
+:hover {
+}
+
+:empty {
+}
+
+:checked {
+}
+
+:visited {
+}
+
+:focus {
+}
+
+:root {
+}
+
+:disabled {
+}
+
+:required {
+}
+
+:visited {
+}
+
+:blur {
+}
+
+:active {
+}
+
+:focus-within {
+}
+
+:valid {
+}
+
+:invalid {
+}
+
+:enabled {
+}
+
+div :where(p) {
+}
+
+div:has(a, span) {
+}
+div:has(a):has(span) {
+}
+
+:is(a) {
+}
+
+:is(div) p {
+}
+/* End Pseudo Classes */
+
+/* Start Pseudo Elements */
+::first-letter {
+}
+
+::first-line {
+}
+
+::before {
+    content: "";
+}
+
+::after {
+    content: "";
+}
+
+::selection {
+}
+
+::placeholder {
+}
+/* End Pseudo Elements */
+
+/* Start Mouse */
+div {
+    cursor: pointer;
+    pointer-events: none;
+}
+/* End Mouse */
+
+/* Opacity: 0.0 (hidden) ===> 1.0(Show) */
+
+/* Start CSS Shadows */
+div {
+    /* Box-Shadow: h-shadow v-shadow blur spread color Type Direction(inset | null) */
+    box-shadow: 0px 0px 10px 10px red inset;
+    
+    /* text-shadow: h-shadow v-shadow blur color */
+    text-shadow: 0px 0px 10px red;
+
+    /* Drop Shadow */
+    filter: drop-shadow(0px 0px 10px red);
+
+    /* Box model ===> margin, border, padding, content */
+    
+    /* box-sizing */
+    box-sizing: border-box;
+}
+/* End CSS Shadows */
+
+/* Start Variable And Counter */
+ul {
+    counter-reset: name_counter 0 | name_counter 2;
+}
+ul li {
+    counter-increment: a;
+    counter-increment: a + 2;
+}
+ul li::before {
+content: counter(a);
+content: counter(name_counter) "Text";
+}
+
+ul li::after {
+content: attr(data-color);
+}
+
+:root {
+/* Global Variable */
+--mainColor: red;
+}
+
+div {
+/* Localy Variable */
+--mainColor: black;
+color: var(--mainColor, red);
+}
+
+@property --main-color {
+syntax: "<color>";
+inherits: true;
+initial-value: lightgray;
+}
+/* End Variable And Counter */
+
+/* Start Overflow */
+div {
+    overflow: auto;
+    overflow: scroll;
+    overflow: visible;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-x: visible;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-y: scroll;
+    overflow-y: visible;
+    overflow-y: hidden;
+}
+/* End Overflow */
+
+/* Start Inheritance */
+div div {
+    color: red;
+}
+div {
+    color: inherit;
+}
+/* End Inheritance */
+
+/* Start list */
+div {
+    list-style-type: decimal;
+    list-style-position: inside;
+    list-style-position: outside;
+    list-style-image: url("../img/W.jpg");
+    list-style: none;
+}
+/* End list */
+
+/* Start Table */
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+/* End Table */
+
+/* Start background image linear gradient */
+div {
+    /* linear-gradient(direction: to top 0deg|to right 90deg|to bottom 180deg|to left 270deg,color نسبة مئوية للون, ...) */
+    width: 100px;
+    height: 10px;
+    background-image: linear-gradient(
+    to top,
+    red 20%,
+    blue 20%,
+    blue 40%,
+    yellow 40%,
+    yellow 60%,
+    pink 60%,
+    pink 80%,
+    white 80%
+    );
+    background-image: linear-gradient(to bottom, red, blue);
+}
+/* End background image linear gradient */
