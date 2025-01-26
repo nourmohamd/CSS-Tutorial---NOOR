@@ -1,0 +1,71 @@
+/* Start Variables */
+:root {
+    --main-color: #19c8f9;
+    --main-color-text: #1f2021;
+    --main-color-light: #777;
+    --padding-section-top-and-bottom: 100px;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul,
+ol,
+dl {
+    list-style: none;
+}
+a,
+button {
+    cursor: pointer;
+}
+body {
+    font-family: "Open Sans", system-ui;
+}
+input:focus {
+    outline: 0;
+}
+/* End Global Rules */
+
+/* Start Container */
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+/* Small Screen */
+@media (max-width: 767px) {
+.container {
+    width: 100%;
+}
+}
+/* Medium Screen */
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+}
+/* Large Screen */
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+}
+/* Extra Large Screen */
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+}
+/* End Container */
