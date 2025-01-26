@@ -1,0 +1,316 @@
+/* Start Position */
+div {
+    /* Position, left, right, top, bottom */
+    position: static;
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+
+    /* z-index Layers System */
+    z-index: -1;
+    z-index: 0;
+    z-index: 1;
+}
+/* End Position */
+
+/* Start Vendor Prefixes */
+/* Website: caniuse */
+/* -webkit ==> Google Chrome, New Opera, Safari */
+/* -o ==> Old Opera */
+/* -ms ==> ie, edge */
+/* -moz ==> firfox */
+
+/* End Vendor Prefixes */
+
+/* Box modeal ===> margin, border, padding, content */
+
+/* Start Flex */
+
+/* Parent */
+.parent {
+    display: flex;
+    display: inline-flex;
+    /* flex-direction: row(default) | row-reverse | column | column-reverse */
+    flex-direction: column;
+    /* flex-wrap: wrap | nowrap(default)| wrap-reverse */
+    flex-wrap: wrap;
+    /* flex-flow: direction | wrap */
+    flex-flow: column wrap;
+    /* justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly */
+    justify-content: center;
+    /* align-items: stretch(default)|flex-start|flex-end|center */
+    /* it works reverse The Direction */
+    align-items: center;
+    /* align-content: stretch|flex-start|flex-end|center|space-between|space-around|space-evenly */
+    align-content: flex-start;
+}
+
+/* Child */
+.parent .child {
+    /* flex-grow: 0(default) */
+    flex-grow: 1;
+    /* flex-shrink: 1(default) */
+    flex-shrink: 2;
+    /* order: number */
+    order: 1;
+    /* flex-basis: px|%|em|rem|vh|vw */
+    /* it works with dircetion if row ==> width else if column ==> height */
+    flex-basis: 10px;
+    /* Shorthand */
+    /* flex: [flex-grow] [flex-shrink] [flex-basis] */
+    flex: 1 2 10px;
+    /* Notice: Don't Use flex-grow with flex-shrink or reverse */
+}
+/* End Flex */
+
+/* Start Media Quries - Responsive */
+@media print {
+}
+
+@media only print {
+}
+
+@media screen {
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 767px) and (max-width: 1000px) {
+}
+
+@media all{
+}
+/* 
+1 - 
+<link rel="stylesheet" href="path" media="Here Put Media" />
+2 -
+<link rel="stylesheet" href="path" media="print" />
+3 -
+<style media="Here Put Media">
+</style>
+*/
+/* Container */
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Media Quries - Responsive */
+
+/* Start Grid */
+.parent {
+    /* Start Grid */
+    display: grid;
+    display: inline-grid;
+    /* grid-template-columns (px, %, fr, auto, vw, vh, em, rem, ...) */
+    grid-template-columns: 100px 20% 1fr auto auto;
+    grid-template-columns: 100px 20% 1fr repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr) repeat(2, auto);
+    /* grid-template-rows (px, %, fr, auto, vw, vh, ...) */
+    grid-template-rows: repeat(2, 1fr);
+    /*Like grid-template-columns*/
+    /* grid-template: grid-template-rows grid-template-columns | grid-template-areas | none */
+    grid-template: repeat(2, 1fr) repeat(3, 1fr) repeat(2, auto);
+    /* Gap */
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-gap: 10px;
+    gap: 10px 10px; /* Row Column | Row&&Column */
+    gap: 10px;
+    /* 
+    justify-content: Like flex
+    flex start(default) | flex-end | center | space-between | space-around | space-evenly
+    */
+    /* 
+    align-content: Like flex
+    stretch(default) | flex start | flex-end | center | space-between | space-around | space-evenly
+    */
+    /* grid-template-areas: "row1" "row2" "row3"
+    Each Row writes by form  "[Name By Element] [Name By Element] [Name By Element] ..."
+    if you want to set column empty only write place it dot [.]
+    in Child we write For in each element : grid-area: Name By Element;
+    */
+}
+
+    /* Grid Children */
+.child {
+    /* grid-column */
+    grid-column: 1/5;
+    /* It takes four columns Becouse Not Including End */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-column: 4 span;
+    /* It takes four columns */
+    grid-column: 2/3 span;
+    /* It takes Three columns start second column */
+
+    /* grid-row */
+    grid-row: 1/5;
+    /* It takes four Rows Becouse Not Including End */
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-row: 4 span;
+    /* It takes four Rows */
+    grid-row: 2/3 span;
+    /* It takes Three Rows start second Row */
+
+    /* ###################### */
+    /* We Can Select Number Of Columns Only With grid-template-columns attribute */
+    /* ###################### */
+
+    /* grid-area: Start Row/ Start Column / End Row / End Column But Not Including End in Row And Column */
+    grid-area: header;
+    grid-area: 2 / 2 / 4 / 6;
+    grid-area: 2 span 2 span;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 6;
+}
+
+    /* minmax and (Responsive) */
+.parent {
+    grid-template-columns: minmax(200px, 400px) repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+    /* Order */
+.child {
+    order: -1;
+    order: 0;
+    order: 1;
+}
+/* End Grid */
+
+/* Start Transition */
+div {
+    transition-property: width;
+    transition-duration: 1s;
+    transition-duration: 1000ms;
+    transition-delay: 1s;
+    transition-delay: 1000ms;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: linear;
+    transition: width 1s 1s linear; /* Shorthand */
+}
+/* End Transition */
+
+/* Start Resize */
+textarea {
+    resize: none;
+    width: 100px; /* Same The cols Attribute */
+    height: 100px; /* Same The rows Attribute */
+}
+/* End Resize */
+
+/* Start Object Fit */
+img {
+    object-fit: fill;
+    object-fit: contain;
+    object-fit: cover;
+    object-fit: none;
+    object-fit: scale-down;
+}
+/* End Object Fit */
+
+/* Start Object Position */
+img {
+    /* default: 50% 50%|X Y|(left|center|right) (top|center|bottom) */
+    object-position: 50% 50%;
+}
+/* End Object Position */
+
+/* Start Filter */
+img {
+    /* filter:
+    brightness(%) سطوع,
+    contrast(%) تباين,
+    blur(px) ضباب,
+    grayscale(%) أبيض و أسود,
+    opacity(0.0(hidden) ==> 1.0(show)) غموض,
+    sepia(%) بني داكن,
+    saturate(Number From 0 until infenite) تشبع الصورة,
+    invert(%) اللواطي عكس الألوان,
+    none إلغاء وضع الفيلتر
+    dropshadow(h-shadow v-shadow blur color)
+    */
+    filter: brightness(100%);
+    filter: contrast(100%);
+    filter: blur(10px);
+    filter: grayscale(100%);
+    filter: opacity(1);
+    filter: sepia(100%);
+    filter: saturate(100);
+    filter: invert(100%);
+    filter: hue-rotate(10deg);
+    filter: drop-shadow(0px 0px 10px black);
+    filter: none;
+    filter: brightness(100%) blur(10px);
+    /* لإضافة أكثر من فلتر لنفس الصورة قم بفضل القيم بفاصلة */
+}
+/* End Filter */
+
+/* Start box-sizing */
+* {
+    box-sizing: border-box;
+    box-sizing: content-box;
+}
+/* End box-sizing */
+
+/* Start clip path */
+/* Website: https://bennettfeely.com/clippy/ */
+div {
+    clip-path: circle(50% at 50% 50%);
+    clip-path: polygon();
+}
+/* End clip path */
+
+/* Start margin collapse */
+/* margin-collapse ==> Only For Vertical */
+/* End margin collapse */
+
+/* Start Caret Color */
+input {
+    caret-color: red;
+}
+/* End Caret Color */
