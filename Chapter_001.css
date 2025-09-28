@@ -90,14 +90,19 @@ div[attr] {}
 
 div[attr="value"] {}
 
+/* Match Word With Space Like " value " */
 div[attr~="value"] {}
 
+/* Match value or value With dash Like "value" Or "value-" */
 div[attr|="value"] {}
 
+/* Match ELements That Ends With value Like "Nourvalue" */
 div[attr$="value"] {}
 
+/* Match ELements That Contains Value Anywhere */
 div[attr*="value"] {}
 
+/* Match ELements That Starts With Value */
 div[attr^="value"] {}
 
 p:first-child {}
@@ -111,7 +116,7 @@ p:last-of-type {}
 p:only-child {}
 
 p:only-of-type {}
-
+    
 p:not(:first-child) {}
 
 p:not(.nour) {}
