@@ -144,8 +144,8 @@ div {
     /* grid-template-rows (px, %, fr, auto, vw, vh, ...) */
     grid-template-rows: repeat(2, 1fr);
     /*Like grid-template-columns*/
-    /* grid-template: grid-template-rows grid-template-columns | grid-template-areas | none */
-    grid-template: repeat(2, 1fr) repeat(3, 1fr) repeat(2, auto);
+    /* grid-template: grid-template-rows / grid-template-columns | grid-template-areas | none */
+    grid-template: repeat(2, 1fr) repeat(3, 1fr) / repeat(2, auto);
     /* Gap */
     row-gap: 10px;
     column-gap: 10px;
@@ -286,13 +286,13 @@ img {
     filter: drop-shadow(0px 0px 10px black);
     filter: none;
     filter: brightness(100%) blur(10px);
-    /* لإضافة أكثر من فلتر لنفس الصورة قم بفضل القيم بفاصلة */
+    /* لإضافة أكثر من فلتر لنفس الصورة قم بفصل القيم بفراغ */
 }
 /* End Filter */
 
 /* Start box-sizing */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;/* Use This For Every Project For Improve Padding And Margin */
     box-sizing: content-box;
 }
 /* End box-sizing */
