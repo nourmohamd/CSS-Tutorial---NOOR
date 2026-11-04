@@ -216,12 +216,6 @@ div {
 :required {
 }
 
-:visited {
-}
-
-:blur {
-}
-
 :active {
 }
 
@@ -330,7 +324,7 @@ color: var(--mainColor, red);
 }
 
 @property --main-color {
-syntax: "<color>";
+syntax: "<color>"; | syntax: "<length>";
 inherits: true;
 initial-value: lightgray;
 }
@@ -376,6 +370,7 @@ div {
 table {
     border-spacing: 0px;
     border-collapse: collapse;
+    table-layout: fixed
 }
 /* End Table */
 
