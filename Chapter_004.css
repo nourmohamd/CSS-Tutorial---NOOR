@@ -48,6 +48,8 @@ div {
     align-items: center;
     /* align-content: stretch|flex-start|flex-end|center|space-between|space-around|space-evenly */
     align-content: flex-start;
+    /* align-self: stretch(default)|flex-start|flex-end|center */
+    align-self: center; /* this item centers, others follow container */
 }
 
 /* Child */
