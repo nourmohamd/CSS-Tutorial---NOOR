@@ -121,4 +121,7 @@
     }
 */
 }
+// Note: Use transform-origin for make box transforming more affecting not perspective-origin
+// transform-origin ===> For Direction Of Moving
+// perspective-origin ===> For Dimentional Of Moving
 /* End Transform */
