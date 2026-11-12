@@ -87,8 +87,8 @@
     /*ForExample:   
     HTML     
     <div class="parent">      
-    <div class="front face"></div>      
-    <div class="back face"></div>    
+    	<div class="front face"></div>      
+    	<div class="back face"></div>    
     </div>  
     CSS    
     .parent {
